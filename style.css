@@ -1,0 +1,84 @@
+body {
+    background-image: url(ChatGPT\ Image\ Mar\ 29\,\ 2026\,\ 06_33_46\ PM.png);
+}
+
+section {
+    padding: 30px;
+    background-color: rgb(213, 223, 248);
+    margin-bottom: 10%;
+    outline-style: solid;
+    outline-width: 10px;
+    outline-color: rgb(95, 125, 170);
+    border-radius: 10px;
+}
+
+section h1 {
+    scroll-margin-top: 150px;
+}
+
+nav {
+    
+    margin: 30px;
+    background-color: rgb(191, 208, 253);
+    display: flex;
+    position: sticky;
+     border-radius: 10px;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+li {
+    padding-left: 25px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(191, 208, 253);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .menu-icon {
+        display: block;
+    }
+
+    ul {
+        display: none;              /* hidden by default */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex;              /* show when clicked */
+    }
+
+    li {
+        padding: 10px;
+        text-align: center;
+    }
+}
